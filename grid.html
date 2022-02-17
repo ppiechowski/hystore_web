@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<!--
+Template Name: Midone - HTML Admin Dashboard Template
+Author: Left4code
+Website: http://www.left4code.com/
+Contact: muhammadrizki@left4code.com
+Purchase: https://themeforest.net/user/left4code/portfolio
+Renew Support: https://themeforest.net/user/left4code/portfolio
+License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
+-->
+<html lang="en">
+    
+    <!-- BEGIN: Head -->
+    <head>
+        <meta charset="utf-8">
+        <link href="dist/images/favicon.png" rel="shortcut icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Dashboard HyStore Project.">
+        <meta name="keywords" content="hystore, project, web app">
+        <meta name="author" content="Piotr Piechowski">
+        <title>HyStore - Grid</title>
+        <!-- BEGIN: CSS Assets-->
+        <link rel="stylesheet" href="dist/css/app.css" />
+        <!-- END: CSS Assets-->
+    </head>
+    <!-- END: Head -->
+    <body class="app">
+        <!-- BEGIN: Mobile Menu -->
+        <div class="mobile-menu md:hidden">
+            <div class="mobile-menu-bar">
+                <a href="index.html" class="flex mr-auto">
+                    <img alt="Midone Tailwind HTML Admin Template" class="w-6" src="dist/images/logo.svg">
+                    <span class="xl:block text-white text-lg ml-3"> Hy<span class="font-medium">Store</span></span>
+                </a>
+                <a href="javascript:;" id="mobile-menu-toggler"> <i data-feather="bar-chart-2" class="w-8 h-8 text-white transform -rotate-90"></i> </a>
+            </div>
+            <ul class="border-t border-theme-24 py-5 hidden">
+                <li>
+                    <a href="index.html" class="menu">
+                        <div class="menu__icon"> <i data-feather="home"></i> </div>
+                        <div class="menu__title"> Home </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="grid.html" class="menu">
+                        <div class="menu__icon"> <i data-feather="zap"></i> </div>
+                        <div class="menu__title"> Grid </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="sources.html" class="menu">
+                        <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                        <div class="menu__title"> Sources </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="hystore.html" class="menu">
+                        <div class="menu__icon"> <i data-feather="battery-charging"></i> </div>
+                        <div class="menu__title"> HyStore </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="loads.html" class="menu">
+                        <div class="menu__icon"> <i data-feather="tv"></i> </div>
+                        <div class="menu__title"> Loads </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="credits.html" class="menu">
+                        <div class="menu__icon"> <i data-feather="info"></i> </div>
+                        <div class="menu__title"> About </div>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+        <!-- END: Mobile Menu -->
+       
+        <div class="flex">
+            <!-- BEGIN: Side Menu -->
+            <nav class="side-nav">
+                <a href="index.html" class="intro-x flex items-center pl-5 pt-4">
+                    <img alt="Logo HyStore Project" class="w-6" src="dist/images/logo.svg">
+                    <span class="hidden xl:block text-white text-lg ml-3"> Hy<span class="font-medium">Store</span></span>
+                </a>
+                <div class="side-nav__devider mt-6 mb-3"></div>
+                <ul>
+                    <li>
+                        <a href="index.html" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="home"></i> </div>
+                            <div class="side-menu__title"> Home </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="grid.html" class="side-menu side-menu--active">
+                            <div class="side-menu__icon"> <i data-feather="zap"></i> </div>
+                            <div class="side-menu__title"> Grid </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="sources.html" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
+                            <div class="side-menu__title"> Sources </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="hystore.html" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="battery-charging"></i> </div>
+                            <div class="side-menu__title"> HyStore </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="loads.html" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="tv"></i> </div>
+                            <div class="side-menu__title"> Loads </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="credits.html" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="info"></i> </div>
+                            <div class="side-menu__title"> About </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- END: Side Menu -->
+            <!-- BEGIN: Content -->
+            <div class="content">
+                <!-- BEGIN: Top Bar -->
+                <div class="top-bar">
+                    <!-- BEGIN: Breadcrumb -->
+                    <div class="-intro-x breadcrumb mr-auto hidden sm:flex"> <a href="" class="">Application</a> <i data-feather="chevron-right" class="breadcrumb__icon"></i> <a href="" class="breadcrumb--active">HyStore</a> </div>
+                    <!-- END: Breadcrumb -->
+                    
+                    <!-- BEGIN: Weather & Language -->
+                    <div class="flex intro-x items-center divide-x divide-gray-400">
+                        <div class="dropdown relative pr-3">
+                            <button class="flex items-center dropdown-toggle button button--sm inline-block bg-theme-7 text-white"><i data-feather="activity" class="mr-2 w-5 h-5"></i>Day</button>
+                            <div class="dropdown-box mt-10 absolute w-30 top-0 right-0 z-50">
+                                <div class="dropdown-box__content box p-2"> 
+                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <i data-feather="bar-chart-2" class="w-4 h-4 mr-2"></i> Month </a>
+                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <i data-feather="bar-chart-2" class="w-4 h-4 mr-2"></i> Year </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex px-2 items-center"><i data-feather="map-pin" class="pr-1"></i><a target="_blank" href="https://www.google.com/maps/place/Centrum+Badawcze+PAN+-+Konwersja+Energii+i+%C5%B9r%C3%B3d%C5%82a+Odnawialne/@52.3781175,20.9267878,17z/data=!3m1!4b1!4m5!3m4!1s0x471eb7f10068413d:0xae94c5a10df57b6e!8m2!3d52.3781175!4d20.9289765">Jablonna</a></div>
+                        <div class="flex px-2 items-center"> <i data-feather="wind" class="pr-1"></i>25 ms/s</div>
+                        <div class="flex px-2 items-center"> <i data-feather="thermometer" class=""></i>25&deg;C</div>
+                        <div class=" px-2 pm-1"> <a href=""><img class="w-6 flag"  src="dist/images/poland-flag-icon-16.png" alt="polish flag"></a></div>
+
+                    </div>
+                    <!-- END: Weather & Language -->
+                </div>
+                <!-- END: Top Bar -->
+
+                <!-- <div class="flex flex-col sm:flex-row items-center border-b border-gray-200 dark:border-dark-5 items-center">
+                    <h2 class="font-medium text-lg mr-auto py-5 -intro-x">
+                        Grid
+                    </h2>
+                    <div class="intro-x">
+                        <div class="preview flex flex-col sm:flex-row justify-center items-center ">
+                            <div class="dropdown relative">
+                                <button class="flex items-center dropdown-toggle button inline-block bg-theme-7 text-white"><i data-feather="activity" class="mr-2 w-5 h-5"></i>Day</button>
+                                <div class="dropdown-box mt-10 absolute w-30 top-0 right-0 z-50">
+                                    <div class="dropdown-box__content box p-2"> 
+                                        <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <i data-feather="bar-chart-2" class="w-4 h-4 mr-2"></i> Month </a>
+                                        <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <i data-feather="bar-chart-2" class="w-4 h-4 mr-2"></i> Year </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- BEGIN: Grid-->
+                <div class="pos intro-y grid grid-row-2 row-gap-1 mt-8 mb-5 border-4 border-gray-600 rounded-md">
+                    <div class="intro-y grid grid-cols-12 col-gap-1 ">
+                        <div class="intro-y col-span-4 box box-content p-1">    
+                            <div class="flex-col items-center">
+                                <div>
+                                    <!-- <img class="object-cover h-64 w-full" src="dist/images/grid.jpg" alt="grid"> -->
+                                </div>
+                                <div class="absolute top-0 right-0"> 
+                                    <div class="p-5" id="basic-textual-toast">
+                                        <div class="preview">
+                                            <div class="text-center"> <a href="javascript:;" data-toggle="modal" data-target="#button-modal-preview" class="button flex items-center dropdown-toggle button inline-block bg-theme-7 text-white"><i data-feather="info" class="mr-2 w-5 h-5"></i>Info</a> </div>
+                                            <div class="modal" id="button-modal-preview">
+                                                <div class="modal__content relative">
+                                                    <a data-dismiss="modal" href="javascript:;" class="absolute right-0 top-0 mt-3 mr-3"> <i data-feather="x" class="w-8 h-8 text-gray-500"></i> </a>
+                                                    <div class="p-5 text-center">
+                                                        <i data-feather="info" class="w-16 h-16 text-theme-9 mx-auto mt-3"></i> 
+                                                        <div class="text-3xl mt-5">HyStore</div>
+                                                        <div class="text-gray-600 mt-2"><p>Hybrydowy magazyn energii elektrycznej HyStore.</p> <p>W jego skład wchodzą cztery rodzaje baterii elektrochemicznych. Baterie sterowane są w sposób skoordynowany, aby jak najlepiej wykorzystać cechy każdej z nich. Wyświetlane tu wielkości są sumą wszystkich składowych baterii.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="px-5 pb-8 text-center">
+                                                        <button type="button" data-dismiss="modal" class="button w-24 bg-theme-1 text-white">Ok</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="absolute top-0 left-0 p-5">
+                                    <div class="text-center button flex items-center dropdown-toggle inline-block bg-theme-7 text-white">Public Grid</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        
+                        <div class="intro-y col-span-8 gap-1">
+                            <div class="grid grid-row-2 gap-1">
+                                <div class="h-48 grid grid-cols-3 pb-2">
+                                    
+                                    <div class="pb-4 col-span-1 box box-content h-48">
+                                        <div class="text-center py-2 mb-2"> Active power </div>
+                                        <div class="flex-none mx-auto px-1 relative">
+                                            <canvas id="report-donut-chart-1" width="80" height="80" class="-mt-24"></canvas>
+                                            <div class="font-medium absolute w-full h-full flex items-center justify-center top-0 left-0 text-2xl pt-10">40kW</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="pb-4 col-span-1 box box-content h-48">
+                                        <div class="text-center py-2 mb-2"> Reactive power </div>
+                                        <div class="flex-none mx-auto px-1 relative">
+                                            <canvas id="report-donut-chart-2" width="80" height="80" class="-mt-24"></canvas>
+                                            <div class="font-medium absolute w-full h-full flex items-center justify-center top-0 left-0 text-2xl pt-10">10kW</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="pb-4 col-span-1 box box-content h-48">
+                                        <div class="text-center py-2 mb-2"> Frequency </div>
+                                        <div class="flex-none mx-auto px-1 relative">
+                                            <canvas id="report-donut-chart-3" width="80" height="80" class="-mt-24"></canvas>
+                                            <div class="font-medium absolute w-full h-full flex items-center justify-center top-0 left-0 text-2xl pt-10">50 Hz</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-cols-3 gap-1 pb-2">
+                                    <div class="box box-content col-span-1 gap-1 mt-4 h-12">
+                                        <div class="flex items-center  justify-center text-center">
+                                            Import
+                                        </div>
+                                        <div class="flex items-center justify-center font-medium text-xl pb-1">
+                                            180 kWh
+                                        </div>
+                                    </div>
+    
+                                    <div class="box box-content col-span-1 gap-1 mt-4">
+                                        <div class="flex items-center h-6 justify-center text-center">
+                                            Export
+                                        </div>
+                                        <div class="flex items-center h-6 justify-center font-medium text-xl pb-1">
+                                            56 kW
+                                        </div>
+                                    </div>
+    
+                                    <div class="box box-content col-span-1 gap-1 mt-4">
+                                        <div class="flex items-center h-6 justify-center text-center">
+                                            Energy balance
+                                        </div>
+                                        <div class="flex items-center h-6 justify-center font-medium text-xl pb-1">
+                                            50 kW
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- <div class="intro-y col-span-1 box box-content p-1">    
+                            <div class="grid grid-row-3 divide-y divide-gray-400 items-center ">
+                                
+                                <div class="h-16 py-1">
+                                    <div class="flex items-center h-6 justify-center text-center">
+                                        Import
+                                    </div>
+                                    <div class="flex items-center h-6 justify-center font-medium text-xl pb-1">
+                                        180 kWh
+                                    </div>
+                                </div>
+
+                                <div class="h-16 py-1">
+                                    <div class="flex items-center h-6 justify-center text-center">
+                                        Export
+                                    </div>
+                                    <div class="flex items-center h-6 justify-center font-medium text-xl pb-1">
+                                        56 kW
+                                    </div>
+                                </div>
+
+                                <div class="h-16 py-1">
+                                    <div class="flex items-center h-6 justify-center text-center">
+                                        Energy balance
+                                    </div>
+                                    <div class="flex items-center h-6 justify-center font-medium text-xl pb-1">
+                                        50 kW
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div> -->
+                    </div>
+
+                    <div class="pos intro-y grid grid-cols-1">
+                        <div class="intro-y col-span-1 box box-content p-1">    
+                            <div class="flex-col items-center">
+                                <div class="py-2 box box-content h-64">
+                                    <canvas class="" id="line-chart-widget" height="50px"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                 <!-- END: Grid -->
+
+            <!-- END: Content -->
+        </div>
+        <!-- BEGIN: JS Assets-->
+        <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+        <script src="dist/js/app.js"></script>
+        <!-- END: JS Assets-->
+    </body>
+</html>

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<!--
+Template Name: Midone - HTML Admin Dashboard Template
+Author: Left4code
+Website: http://www.left4code.com/
+Contact: muhammadrizki@left4code.com
+Purchase: https://themeforest.net/user/left4code/portfolio
+Renew Support: https://themeforest.net/user/left4code/portfolio
+License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
+-->
+<html lang="en">
+    
+    <!-- BEGIN: Head -->
+    <head>
+        <meta charset="utf-8">
+        <link href="dist/images/favicon.png" rel="shortcut icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Dashboard HyStore Project.">
+        <meta name="keywords" content="hystore, project, web app">
+        <meta name="author" content="Piotr Piechowski">
+        <title>HyStore - Home</title>
+        <!-- BEGIN: CSS Assets-->
+        <link rel="stylesheet" href="dist/css/app.css" />
+        <!-- END: CSS Assets-->
+    </head>
+    <!-- END: Head -->
+    <body class="app">
+        <!-- BEGIN: Mobile Menu -->
+        <div class="mobile-menu md:hidden">
+            <div class="mobile-menu-bar">
+                <a href="" class="flex mr-auto">
+                    <img alt="Midone Tailwind HTML Admin Template" class="w-6" src="dist/images/logo.svg">
+                    <span class="xl:block text-white text-lg ml-3"> Hy<span class="font-medium">Store</span></span>
+                </a>
+                <a href="javascript:;" id="mobile-menu-toggler"> <i data-feather="bar-chart-2" class="w-8 h-8 text-white transform -rotate-90"></i> </a>
+            </div>
+            <ul class="border-t border-theme-24 py-5 hidden">
+                <li>
+                    <a href="index.html" class="menu">
+                        <div class="menu__icon"> <i data-feather="home"></i> </div>
+                        <div class="menu__title"> Home </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="grid.html" class="menu">
+                        <div class="menu__icon"> <i data-feather="zap"></i> </div>
+                        <div class="menu__title"> Grid </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="sources.html" class="menu">
+                        <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                        <div class="menu__title"> Sources </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="hystore.html" class="menu">
+                        <div class="menu__icon"> <i data-feather="battery-charging"></i> </div>
+                        <div class="menu__title"> HyStore </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="loads.html" class="menu">
+                        <div class="menu__icon"> <i data-feather="tv"></i> </div>
+                        <div class="menu__title"> Loads </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="credits.html" class="menu">
+                        <div class="menu__icon"> <i data-feather="info"></i> </div>
+                        <div class="menu__title"> About </div>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+        <!-- END: Mobile Menu -->
+       
+        <div class="flex">
+            <!-- BEGIN: Side Menu -->
+            <nav class="side-nav">
+                <a href="" class="intro-x flex items-center pl-5 pt-4">
+                    <img alt="Logo HyStore Project" class="w-6" src="dist/images/logo.svg">
+                    <span class="hidden xl:block text-white text-lg ml-3"> Hy<span class="font-medium">Store</span></span>
+                </a>
+                <div class="side-nav__devider mt-6 mb-3"></div>
+                <ul>
+                    <li>
+                        <a href="index.html" class="side-menu side-menu--active">
+                            <div class="side-menu__icon"> <i data-feather="home"></i> </div>
+                            <div class="side-menu__title"> Home </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="grid.html" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="zap"></i> </div>
+                            <div class="side-menu__title"> Grid </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="sources.html" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
+                            <div class="side-menu__title"> Sources </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="hystore.html" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="battery-charging"></i> </div>
+                            <div class="side-menu__title"> HyStore </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="loads.html" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="tv"></i> </div>
+                            <div class="side-menu__title"> Loads </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="credits.html" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="info"></i> </div>
+                            <div class="side-menu__title"> About </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- END: Side Menu -->
+            <!-- BEGIN: Content -->
+            <div class="content">
+                
+                <!-- BEGIN: Top Bar -->
+                <div class="top-bar">
+                    <!-- BEGIN: Breadcrumb -->
+                    <div class="-intro-x breadcrumb mr-auto hidden sm:flex"> <a href="" class="">Application</a> <i data-feather="chevron-right" class="breadcrumb__icon"></i> <a href="" class="breadcrumb--active">Home</a> </div>
+                    <!-- END: Breadcrumb -->
+                    
+                    <!-- BEGIN: Weather & Language -->
+                    <div class="flex intro-x items-center divide-x divide-gray-400">
+                        <div class="flex px-2 items-center"><i data-feather="map-pin" class="pr-1"></i><a target="_blank" href="https://www.google.com/maps/place/Centrum+Badawcze+PAN+-+Konwersja+Energii+i+%C5%B9r%C3%B3d%C5%82a+Odnawialne/@52.3781175,20.9267878,17z/data=!3m1!4b1!4m5!3m4!1s0x471eb7f10068413d:0xae94c5a10df57b6e!8m2!3d52.3781175!4d20.9289765">Jablonna</a></div>
+                        <div class="flex px-2 items-center"> <i data-feather="wind" class="pr-1"></i>25 ms/s</div>
+                        <div class="flex px-2 items-center"> <i data-feather="thermometer" class=""></i>25&deg;C</div>
+                        <div class=" px-2 pm-1"> <a href=""><img class="w-6 flag"  src="dist/images/poland-flag-icon-16.png" alt="polish flag"></a></div>
+
+                    </div>
+                    <!-- END: Weather & Language -->
+                </div>
+                <!-- END: Top Bar -->
+
+                <!-- <div class="intro-y flex flex-col sm:flex-row items-center py-5">
+                    <h2 class="text-lg font-medium mr-auto">
+                        Home
+                    </h2>
+                </div>
+                 -->
+                <!-- BEGIN: Boxes first -->
+                <div class="pos intro-y grid grid-cols-1 xxl:grid-cols-5 col-gap-2 xxl:col-gap-16 mx-1 xxl:mx-16 py-8">
+                    
+                    <div class="">    
+                        <div class="zoom-in">
+                            <a href="grid.html">
+                                <div class="intro-y col-span-1 box box-content h-56 p-5 zoom-in">
+                                    <div class="flex">
+                                        Grid 
+                                        <div class="ml-auto">
+                                            <div class="report-box__indicator bg-theme-6 cursor-pointer tooltipstered" title=""> Import </div>
+                                        </div>
+                                    </div>
+                                    <div class="py-2">
+                                        <img class="h-32" style="display: block; margin-left: auto; margin-right: auto;" src="dist/images/iconGRID.jpg" alt="icon cogeneration">
+                                    </div>
+                                    <div class="">
+                                        <h2 class="text-3xl font-large font-medium text-gray-700 text-center">
+                                            -111 KW
+                                        </h2>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="intro-y col-span-1 h-30">
+                            <div class="circle bg-theme-6 my-2 mx-auto"></div>
+                            <div class="circle bg-theme-6 my-2 mx-auto"></div>  
+                        </div>    
+                    </div>
+
+                    <div class="">    
+                        <div class="zoom-in">
+                            <a href="loads.html">
+                                <div class="intro-y col-span-1 box box-content h-56 p-5 zoom-in">
+                                    <div class="flex">
+                                        PV 
+                                        <div class="ml-auto">
+                                            <div class="report-box__indicator bg-theme-9 cursor-pointer tooltipstered" title=""> Export </div>
+                                        </div>
+                                    </div>
+                                    <div class="py-2">
+                                        <img class="h-32" style="display: block; margin-left: auto; margin-right: auto;" src="dist/images/iconPV.jpg" alt="icon cogeneration">
+                                    </div>
+                                    <div class="">
+                                        <h2 class="text-3xl font-large font-medium text-gray-700 text-center">
+                                            +22 KW
+                                        </h2>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="intro-y col-span-1 h-30">
+                            <div class="circle bg-theme-9 my-2 mx-auto"></div>
+                            <div class="circle bg-theme-9 my-2 mx-auto"></div>  
+                        </div>    
+                    </div>
+
+                    <div class="">    
+                        <div class="zoom-in">
+                            <a href="loads.html">
+                                <div class="intro-y col-span-1 box box-content h-56 p-5 zoom-in">
+                                    <div class="flex">
+                                        Wind 
+                                        <div class="ml-auto">
+                                            <div class="report-box__indicator bg-theme-9 cursor-pointer tooltipstered" title=""> Export </div>
+                                        </div>
+                                    </div>
+                                    <div class="py-2">
+                                        <img class="h-32" style="display: block; margin-left: auto; margin-right: auto;" src="dist/images/iconWIND.jpg" alt="icon cogeneration">
+                                    </div>
+                                    <div class="">
+                                        <h2 class="text-3xl font-large font-medium text-gray-700 text-center">
+                                            +15 KW
+                                        </h2>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="intro-y col-span-1 h-30">
+                            <div class="circle bg-theme-9 my-2 mx-auto"></div>
+                            <div class="circle bg-theme-9 my-2 mx-auto"></div>  
+                        </div>    
+                    </div>
+                    
+                    <div class="">    
+                        <div class="zoom-in">
+                            <a href="loads.html">
+                                <div class="intro-y col-span-1 box box-content h-56 p-5 zoom-in">
+                                    <div class="flex">
+                                        CHP 
+                                        <div class="ml-auto">
+                                            <div class="report-box__indicator bg-theme-9 cursor-pointer tooltipstered" title=""> Export </div>
+                                        </div>
+                                    </div>
+                                    <div class="py-2">
+                                        <img class="h-32" style="display: block; margin-left: auto; margin-right: auto;" src="dist/images/iconENGINE.jpg" alt="icon cogeneration">
+                                    </div>
+                                    <div class="">
+                                        <h2 class="text-3xl font-large font-medium text-gray-700 text-center">
+                                            +15 KW
+                                        </h2>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="intro-y col-span-1 h-30">
+                            <div class="circle bg-theme-9 my-2 mx-auto"></div>
+                            <div class="circle bg-theme-9 my-2 mx-auto"></div>  
+                        </div>    
+                    </div>
+                    
+                    <div class="">    
+                        <div class="zoom-in">
+                            <a href="hystore.html">
+                                <div class="intro-y col-span-1 box box-content h-56 p-5 zoom-in">
+                                    <div class="flex">
+                                        HyStore 
+                                        <div class="ml-auto">
+                                            <div class="report-box__indicator bg-theme-6 cursor-pointer tooltipstered" title=""> Charge </div>
+                                        </div>
+                                    </div>
+                                    <div class="py-2">
+                                        <img class="h-32" style="display: block; margin-left: auto; margin-right: auto;" src="dist/images/icon_hystore.png" alt="icon cogeneration">
+                                    </div>
+                                    <div class="">
+                                        <h2 class="text-3xl font-large font-medium text-gray-700 text-center">
+                                            -5 KW
+                                        </h2>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="intro-y col-span-1 h-30">
+                            <div class="circle bg-theme-6 my-2 mx-auto"></div>
+                            <div class="circle bg-theme-6 my-2 mx-auto"></div>  
+                        </div>    
+                    </div>
+                    
+                </div>
+                <!-- END: Boxes  first -->
+
+                <!-- BEGIN: Line -->
+                <div class="pos intro-y grid grid-cols-5 mx-8">
+                    
+                        <div class="circle bg-theme-12 mx-auto"></div>
+                        <div class="circle bg-theme-12 mx-auto"></div>
+                        <div class="circle bg-theme-12 mx-auto"></div>
+                        <div class="circle bg-theme-12 mx-auto"></div>
+                        <div class="circle bg-theme-12 mx-auto"></div>
+                   
+                </div>
+                 <!-- END: Line -->
+
+                <!-- BEGIN: Boxes secound -->
+                <div class="pos intro-y grid grid-cols-1 xxl:grid-cols-5 col-gap-2 xxl:col-gap-16 mx-1 xxl:mx-16">
+                    
+                    <div class="">    
+                        <div class="intro-y col-span-1 h-30">
+                            <div class="circle bg-theme-6 my-2 mx-auto"></div>
+                            <div class="circle bg-theme-6 my-2 mx-auto"></div>  
+                        </div>   
+                        <div class="zoom-in">
+                            <a href="receivers.html">
+                                <div class="intro-y col-span-1 box box-content h-56 p-5 zoom-in">
+                                    <div class="flex">
+                                        B1 Laboratory 
+                                        <div class="ml-auto">
+                                            <div class="report-box__indicator bg-theme-6 cursor-pointer tooltipstered" title=""> Import </div>
+                                        </div>
+                                    </div>
+                                    <div class="py-2">
+                                        <img class="h-32" style="display: block; margin-left: auto; margin-right: auto;" src="dist/images/iconGRID.jpg" alt="icon cogeneration">
+                                    </div>
+                                    <div class="">
+                                        <h2 class="text-3xl font-large font-medium text-gray-700 text-center">
+                                            -6 KW
+                                        </h2>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="">    
+                        <div class="intro-y col-span-1 h-30">
+                            <div class="circle bg-theme-6 my-2 mx-auto"></div>
+                            <div class="circle bg-theme-6 my-2 mx-auto"></div>  
+                        </div>   
+                        <div class="zoom-in">
+                            <a href="receivers.html">
+                                <div class="intro-y col-span-1 box box-content h-56 p-5 zoom-in">
+                                    <div class="flex">
+                                        Office 
+                                        <div class="ml-auto">
+                                            <div class="report-box__indicator bg-theme-6 cursor-pointer tooltipstered" title=""> Import </div>
+                                        </div>
+                                    </div>
+                                    <div class="py-2">
+                                        <img class="h-32" style="display: block; margin-left: auto; margin-right: auto;" src="dist/images/iconGRID.jpg" alt="icon cogeneration">
+                                    </div>
+                                    <div class="">
+                                        <h2 class="text-3xl font-large font-medium text-gray-700 text-center">
+                                            -18 KW
+                                        </h2>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="">    
+                        <div class="intro-y col-span-1 h-30">
+                            <div class="circle bg-theme-6 my-2 mx-auto"></div>
+                            <div class="circle bg-theme-6 my-2 mx-auto"></div>  
+                        </div>   
+                        <div class="zoom-in">
+                            <a href="receivers.html">
+                                <div class="intro-y col-span-1 box box-content h-56 p-5 zoom-in">
+                                    <div class="flex">
+                                        B2 Laboratory 
+                                        <div class="ml-auto">
+                                            <div class="report-box__indicator bg-theme-6 cursor-pointer tooltipstered" title=""> Import </div>
+                                        </div>
+                                    </div>
+                                    <div class="py-2">
+                                        <img class="h-32" style="display: block; margin-left: auto; margin-right: auto;" src="dist/images/iconGRID.jpg" alt="icon cogeneration">
+                                    </div>
+                                    <div class="">
+                                        <h2 class="text-3xl font-large font-medium text-gray-700 text-center">
+                                            -95 KW
+                                        </h2>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="">    
+                        <div class="intro-y col-span-1 h-30">
+                            <div class="circle bg-theme-6 my-2 mx-auto"></div>
+                            <div class="circle bg-theme-6 my-2 mx-auto"></div>  
+                        </div>   
+                        <div class="zoom-in">
+                            <a href="receivers.html">
+                                <div class="intro-y col-span-1 box box-content h-56 p-5 zoom-in">
+                                    <div class="flex">
+                                        Heating 
+                                        <div class="ml-auto">
+                                            <div class="report-box__indicator bg-theme-6 cursor-pointer tooltipstered" title=""> Import </div>
+                                        </div>
+                                    </div>
+                                    <div class="py-2">
+                                        <img class="h-32" style="display: block; margin-left: auto; margin-right: auto;" src="dist/images/iconGRID.jpg" alt="icon cogeneration">
+                                    </div>
+                                    <div class="">
+                                        <h2 class="text-3xl font-large font-medium text-gray-700 text-center">
+                                            -115 KW
+                                        </h2>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="">    
+                        <div class="intro-y col-span-1 h-30">
+                            <div class="circle bg-theme-6 my-2 mx-auto"></div>
+                            <div class="circle bg-theme-6 my-2 mx-auto"></div>  
+                        </div>   
+                        <div class="zoom-in">
+                            <a href="receivers.html">
+                                <div class="intro-y col-span-1 box box-content h-56 p-5 zoom-in">
+                                    <div class="flex">
+                                        Car charger 
+                                        <div class="ml-auto">
+                                            <div class="report-box__indicator bg-theme-6 cursor-pointer tooltipstered" title=""> Import </div>
+                                        </div>
+                                    </div>
+                                    <div class="py-2">
+                                        <img class="h-32" style="display: block; margin-left: auto; margin-right: auto;" src="dist/images/iconGRID.jpg" alt="icon cogeneration">
+                                    </div>
+                                    <div class="">
+                                        <h2 class="text-3xl font-large font-medium text-gray-700 text-center">
+                                            -115 KW
+                                        </h2>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <!-- END: Boxes secound -->
+
+
+
+            <!-- END: Content -->
+        </div>
+        <!-- BEGIN: JS Assets-->
+        <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+        <script src="dist/js/app.js"></script>
+        <!-- END: JS Assets-->
+    </body>
+</html>

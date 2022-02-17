@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<!--
+Template Name: Midone - HTML Admin Dashboard Template
+Author: Left4code
+Website: http://www.left4code.com/
+Contact: muhammadrizki@left4code.com
+Purchase: https://themeforest.net/user/left4code/portfolio
+Renew Support: https://themeforest.net/user/left4code/portfolio
+License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
+-->
+<html lang="en">
+    
+    <!-- BEGIN: Head -->
+    <head>
+        <meta charset="utf-8">
+        <link href="dist/images/favicon.png" rel="shortcut icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Dashboard HyStore Project.">
+        <meta name="keywords" content="hystore, project, web app">
+        <meta name="author" content="Piotr Piechowski">
+        <title>HyStore - About project</title>
+        <!-- BEGIN: CSS Assets-->
+        <link rel="stylesheet" href="dist/css/app.css" />
+        <!-- END: CSS Assets-->
+    </head>
+    <!-- END: Head -->
+    <body class="app">
+        <!-- BEGIN: Mobile Menu -->
+        <div class="mobile-menu md:hidden">
+            <div class="mobile-menu-bar">
+                <a href="" class="flex mr-auto">
+                    <img alt="Midone Tailwind HTML Admin Template" class="w-6" src="dist/images/logo.svg">
+                    <span class="xl:block text-white text-lg ml-3"> Hy<span class="font-medium">Store</span></span>
+                </a>
+                <a href="javascript:;" id="mobile-menu-toggler"> <i data-feather="bar-chart-2" class="w-8 h-8 text-white transform -rotate-90"></i> </a>
+            </div>
+            <ul class="border-t border-theme-24 py-5 hidden">
+                <li>
+                    <a href="index.html" class="menu">
+                        <div class="menu__icon"> <i data-feather="home"></i> </div>
+                        <div class="menu__title"> Home </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="grid.html" class="menu">
+                        <div class="menu__icon"> <i data-feather="zap"></i> </div>
+                        <div class="menu__title"> Grid </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="sources.html" class="menu">
+                        <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                        <div class="menu__title"> Sources </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="hystore.html" class="menu">
+                        <div class="menu__icon"> <i data-feather="battery-charging"></i> </div>
+                        <div class="menu__title"> HyStore </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="loads.html" class="menu">
+                        <div class="menu__icon"> <i data-feather="tv"></i> </div>
+                        <div class="menu__title"> Loads </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="credits.html" class="menu">
+                        <div class="menu__icon"> <i data-feather="info"></i> </div>
+                        <div class="menu__title"> About </div>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+        <!-- END: Mobile Menu -->
+       
+        <div class="flex">
+            <!-- BEGIN: Side Menu -->
+            <nav class="side-nav">
+                <a href="" class="intro-x flex items-center pl-5 pt-4">
+                    <img alt="Logo HyStore Project" class="w-6" src="dist/images/logo.svg">
+                    <span class="hidden xl:block text-white text-lg ml-3"> Hy<span class="font-medium">Store</span></span>
+                </a>
+                <div class="side-nav__devider mt-6 mb-3"></div>
+                <ul>
+                    <li>
+                        <a href="index.html" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="home"></i> </div>
+                            <div class="side-menu__title"> Home </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="grid.html" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="zap"></i> </div>
+                            <div class="side-menu__title"> Grid </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="sources.html" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
+                            <div class="side-menu__title"> Sources </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="hystore.html" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="battery-charging"></i> </div>
+                            <div class="side-menu__title"> HyStore </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="loads.html" class="side-menu">
+                            <div class="side-menu__icon"> <i data-feather="tv"></i> </div>
+                            <div class="side-menu__title"> Loads </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="credits.html" class="side-menu side-menu--active">
+                            <div class="side-menu__icon"> <i data-feather="info"></i> </div>
+                            <div class="side-menu__title"> About </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- END: Side Menu -->
+
+            <!-- BEGIN: Content -->
+            <div class="content">
+                <!-- BEGIN: Top Bar -->
+                <div class="top-bar">
+                    <!-- BEGIN: Breadcrumb -->
+                    <div class="-intro-x breadcrumb mr-auto hidden sm:flex"> <a href="" class="">Application</a> <i data-feather="chevron-right" class="breadcrumb__icon"></i> <a href="" class="breadcrumb--active">About project</a> </div>
+                    <!-- END: Breadcrumb -->
+                    
+                    <!-- BEGIN: Weather & Language -->
+                    <div class="breadcrumb intro-x ">
+                        <div class="breadcrumb px-2"> <i data-feather="wind" class="pr-1"></i>25 ms/s</div>
+                        <div class="breadcrumb px-2"> <i data-feather="thermometer" class=""></i>25&deg;C</div>
+                        <div class="px-2 pb-1"> <a href=""><img class="w-6 flag"  src="dist/images/poland-flag-icon-16.png" alt="polish flag"></a></div>
+
+                    </div>
+                    <!-- END: Weather & Language -->
+                </div>
+                <!-- END: Top Bar -->
+
+                <div class="intro-y flex flex-col sm:flex-row items-center mt-5 mb-5">
+                    <h2 class="text-lg font-medium mr-auto">
+                        About project
+                    </h2>
+                </div>
+                
+                <!-- BEGIN: Logo & info -->
+                <div class="pos intro-y grid grid-cols-12 gap-5">
+                   
+                    <div class="intro-y col-span-12 lg:col-span-3">
+                        <div class="grid grid-cols-2 gap-5">
+                            <div class="col-span-12 sm:col-span-4 xxl:col-span-3 box p-5">
+                                <div><img class="" src="dist/images/logo-small.png" alt="HyStore logo"></div>
+                            </div>
+                            <div class="col-span-12 sm:col-span-4 xxl:col-span-3 box p-5">
+                                <div class="font-medium text-base">Project manager</div>
+                                <div class="">dr inż. Krzysztof Rafał</div>
+                                <div class="">krafal@imp.gda.pl</div>
+                            </div>
+                            <div class="col-span-12 sm:col-span-4 xxl:col-span-3 box p-5">
+                                <div class="font-medium text-base">Links</div>
+                                <div class="text-gray-600">link 1</div>
+                                <div class="text-gray-600">link 2</div>
+                                <div class="text-gray-600">link 3</div>
+                            </div>
+                            <div class="col-span-12 sm:col-span-4 xxl:col-span-3 box p-5">
+                                <div class="font-medium text-base">Media</div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- END: Logo and info -->
+                    
+                    <!-- BEGIN: Text -->
+                    <div class="col-span-12 lg:col-span-9 box">
+                        <div class="col-span-1 p-5">
+                            <div class="font-medium text-base">ENG: Hybrydowy magazyn energii</div>
+                                <div class="grid grid-cols-9">
+                                    <div class="col-span-9 lg:col-span-2 pt-5">
+                                        <img src="dist/images/1536-1024-hystore-1200x800.jpg" alt="hystore photo">
+                                    </div>
+                                    <div class="col-span-9 lg:col-span-7 px-0 py-5 lg:px-5">
+                                        <p class="text-justify">ENG: Konwencjonalne podejście do magazynowania energii zakłada zastosowanie w systemie magazynowania energii elektrycznej tylko jednej wybranej technologii. Jest ona zazwyczaj dobrana do pełnienia jednej funkcji.</p> 
+                                        <p class="text-justify pt-5">Proponowany w ramach projektu HyStore magazyn hybrydowy łączy w ramach jednego systemu dwie lub więcej technologie bateryjne. Takie rozwiązanie pozwala na optymalizację wydajności magazynu energii w przypadku, gdy ma on pełnić wiele funkcji. Dla użytkownika oznacza to możliwość wydłużenia czasu życia oraz zwiększenia korzyści i przychodów z instalacji magazynu energii.</p> 
+                                    </div>
+                                </div>  
+                            
+                            <div class="font-medium text-base pt-5">ENG: System zarządzania energią</div>
+                                <div class="grid grid-cols-9">
+                                    <div class="col-span-9 lg:col-span-2 pt-5">
+                                        <img src="dist/images/1536-1024-1200x800.jpg" alt="drivers photo">
+                                    </div>
+                                    <div class="col-span-9 lg:col-span-7 px-0 py-5 lg:px-5">
+                                        <p class="text-justify">ENG: O korzyściach z zastosowania systemu magazynowania energii decyduje sposób, w jaki jest on sterowany. W ramach projektu HyStore zostanie opracowany system zarządzania energią (Energy Management System – EMS) dedykowany hybrydowym magazynom energii. Do maksymalizacji zysków generowanych przez magazyn energii zostaną zaprzężone algorytmy optymalizacyjne.</p> 
+                                    </div>
+                                </div>
+                                
+                            <div class="font-medium text-base pt-5">ENG: Demonstrator technologii</div>
+                                <div class="grid grid-cols-9">
+                                    <div class="col-span-9 lg:col-span-2 pt-5">
+                                        <img src="dist/images/1365-1024-flow-1200x900.jpg" alt="demo photo">
+                                    </div>
+                                    <div class="col-span-9 lg:col-span-7 px-0 py-5 lg:px-5">
+                                        <p class="text-justify">ENG: Instalacja demonstracyjna hybrydowego magazynu energii działa w KEZO Centrum Badawczym Polskiej Akademii Nauk w Jabłonnie. System jest częścią funkcjonalnej mikrosieci obejmującej źródła odnawialne, odbiorniki energii oraz stacje ładowania pojazdów. W ramach magazynu hybrydowego działają wybrane dostępne na rynku technologie bateryjne: przepływowa, litowo-jonowa i kwasowo-ołowiowa.</p> 
+                                    </div>
+                                </div>      
+                        </div>
+                    </div>
+                    <!-- END: Text -->
+                </div>
+                <!-- START: Flags -->
+                <div class="mt-5 box p-5 intro-y">
+                    <div class="font-medium text-center py-5">ENG: Projekt „System Zarządzania Hybrydowym Magazynem Energii” finansowany przez Narodowe Centrum Badań i Rozwoju w ramach programu Lider X edycja.
+                    </div> 
+                    <div class="grid grid-cols-5 items-center">
+                        <div class="col-span-5 xl:col-span-1 p-5">
+                            <img class="" src="dist/images/logo-small.png" alt="HyStore logo" style="display: block; margin-left: auto; margin-right: auto;">
+                        </div>
+                        
+                        <div class="col-span-5 xl:col-span-1 p-5">
+                            <img class="" src="dist/images/lider-e1587833833144-400x176.png" alt="Lider program logo" style="display: block; margin-left: auto; margin-right: auto;">
+                        </div>
+                        
+                        <div class="col-span-5 xl:col-span-1 p-5">
+                            <img class="" src="dist/images/logoimp_final2small130.png" alt="IMP logo" style="display: block; margin-left: auto; margin-right: auto;">
+                        </div>
+                        
+                        <div class="col-span-5 xl:col-span-1 p-5">
+                            <img class="" src="dist/images/Ncbr-logo_130.svg-1.png" alt="NCBR logo" style="display: block; margin-left: auto; margin-right: auto;">
+                        </div>
+                        
+                        <div class="col-span-5 xl:col-span-1 p-5">
+                            <img class="" src="dist/images/CBPAN_KEZO_poziom_g-1.png" alt="KEZO logo" style="display: block; margin-left: auto; margin-right: auto;">
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Flags -->
+            </div>
+            <!-- END: Content -->
+        </div>
+        <!-- BEGIN: JS Assets-->
+        <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+        <script src="dist/js/app.js"></script>
+        <!-- END: JS Assets-->
+    </body>
+</html>
